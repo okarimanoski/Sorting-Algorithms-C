@@ -1,0 +1,12 @@
+> [echo, golf, foxtrot, charlie, alpha, delta, bravo, india, hotel]
+> --- Start sorting ---
+> [hotel, golf, foxtrot, echo, alpha, delta, bravo, charlie, india]
+> [golf, echo, foxtrot, charlie, alpha, delta, bravo, hotel, india]
+> [foxtrot, echo, delta, charlie, alpha, bravo, golf, hotel, india]
+> [echo, charlie, delta, bravo, alpha, foxtrot, golf, hotel, india]
+> [delta, charlie, alpha, bravo, echo, foxtrot, golf, hotel, india]
+> [charlie, bravo, alpha, delta, echo, foxtrot, golf, hotel, india]
+> [bravo, alpha, charlie, delta, echo, foxtrot, golf, hotel, india]
+> [alpha, bravo, charlie, delta, echo, foxtrot, golf, hotel, india]
+> --- Finished sorting ---
+> [alpha, bravo, charlie, delta, echo, foxtrot, golf, hotel, india]

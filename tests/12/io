@@ -1,0 +1,6 @@
+> [airforce1, marine1, airforce2]
+> --- Start sorting ---
+> [airforce1, marine1]
+> [airforce1, airforce2, marine1]
+> --- Finished sorting ---
+> [airforce1, airforce2, marine1]

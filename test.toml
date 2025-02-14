@@ -1,0 +1,142 @@
+[project_definition]
+binary_path = "./a2"
+makefile_path = "."
+make_targets = ["all"]
+project_name = "a2"
+global_timeout = 10
+
+[[testcases]]
+name = "Bubblesort with ordered list"
+description = "Bubblesort with an ordered list of integers."
+type = "OrdIO"
+io_file = "tests/01/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+argv = ["bubble", "int", "3", "1,2,3"]
+
+[[testcases]]
+name = "Mergesort with ordered list"
+description = "Mergesort with an ordered list of integers."
+type = "OrdIO"
+io_file = "tests/02/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+argv = ["merge", "int", "3", "1,2,3"]
+
+[[testcases]]
+name = "Heapsort with ordered list"
+description = "Heapsort with an ordered list of integers."
+type = "OrdIO"
+io_file = "tests/03/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+argv = ["heap", "int", "3", "1,2,3"]
+
+[[testcases]]
+name = "No arguments given"
+description = " No arguments passed to the program."
+type = "OrdIO"
+io_file = "tests/04/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 1
+argv = []
+
+[[testcases]]
+name = "Count is not a number"
+description = "Write out the count in words."
+type = "OrdIO"
+io_file = "tests/05/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 4
+argv = ["bubble", "int", "three", "1,2,3"]
+
+[[testcases]]
+name = "Bubblesort Basics"
+description = "Simple Bubblesort."
+type = "OrdIO"
+io_file = "tests/06/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+argv = ["bubble", "int", "12", "8,5,3,11,6,1,12,2,9,10,4,7"]
+
+[[testcases]]
+name = "Merely Mergesort"
+description = "Simple Mergesort."
+type = "OrdIO"
+io_file = "tests/07/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+argv = ["merge", "int", "12", "8,5,3,11,6,1,12,2,9,10,4,7"]
+
+[[testcases]]
+name = "Heapsort Hustle"
+description = "Simple Heapsort."
+type = "OrdIO"
+io_file = "tests/08/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+argv = ["heap", "int", "12", "8,5,3,11,6,1,12,2,9,10,4,7"]
+
+[[testcases]]
+name = "Fun with strings"
+description = "Simple string sorting."
+type = "OrdIO"
+io_file = "tests/09/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+argv = ["bubble", "string", "3", "fun,with,strings"]
+
+[[testcases]]
+name = "Double Trouble"
+description = "The same string appears twice."
+type = "OrdIO"
+io_file = "tests/10/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+argv = ["merge", "string", "3", "oh,la,la"]
+
+[[testcases]]
+name = "Alphabet"
+description = "Sort a part of the military alphabet."
+type = "OrdIO"
+io_file = "tests/11/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+argv = ["heap", "string", "9", "echo,golf,foxtrot,charlie,alpha,delta,bravo,india,hotel"]
+
+[[testcases]]
+name = "Letters and Numbers"
+description = "Sort a list of strings which consist of both letters and numbers."
+type = "OrdIO"
+io_file = "tests/12/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+argv = ["merge", "string", "3", "airforce1,marine1,airforce2"]
+
+[[testcases]]
+name = "Collatz Conjecture"
+description = "Sort the numbers of the collatz conjecture (3n+1-problem), starting with 42."
+type = "OrdIO"
+io_file = "tests/13/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+argv = ["heap", "int", "9", "42,21,64,32,16,8,4,2,1"]
+
+[[testcases]]
+name = "Think big"
+description = "Sort large numbers."
+type = "OrdIO"
+io_file = "tests/14/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+argv = ["bubble", "int", "7", "123456789,1001,42069,31415926,1414213,271828,1234"]
+
+[[testcases]]
+name = "Tutors"
+description = "Sort the tutor's first names."
+type = "OrdIO"
+io_file = "tests/15/io"
+io_prompt = "^\\s*>\\s*$"
+exp_exit_code = 0
+argv = ["bubble", "string", "5", "Tamim,Lukas,Clemens,Sebastian,Anna"]
+
